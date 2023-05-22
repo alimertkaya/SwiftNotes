@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // coredata dan verileri çekicez
     @objc func getData() {
         
-        // array leri temizler
+        // array leri temizler, dizilerde iki kere gözükmemesi için birçok kez verileri çekiyoruz
         nameArray.removeAll()
         idArray.removeAll()
         

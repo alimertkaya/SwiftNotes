@@ -113,7 +113,7 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         newPainting.setValue(artistText.text!, forKey: "artist")
         newPainting.setValue(UUID(), forKey: "id")
         
-        if let year = Int(yearText.text!) {
+        if let year = Int(yearText.text!) {     
             newPainting.setValue(year, forKey: "year")
         }
         
