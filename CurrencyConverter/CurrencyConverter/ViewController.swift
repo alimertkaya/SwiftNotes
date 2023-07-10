@@ -51,11 +51,23 @@ class ViewController: UIViewController {
                 // 2) Response & Data
                 if data != nil {
                     
+                    // JSON result object oluşturucaz, veriyi JSON olarak alıyoruz işlemek için
+                    do {
+                        // mutableContainers -> dictionaries rı JSON objectimiz ile kullanmamızı sağlar
+                        let jsonRenponse = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers)
+                        
+                        // Arka planda bu işlemler yapılırken arayüz kitlenmesin, uygulama çökmesin diye
+                        DispatchQueue.main.async {
+                            print(jsonRenponse)
+                        }
+                        
+                    } catch {
+                        print("error")
+                    }
                 }
-                
             }
         }
-        
+        // task i başlatır
+        task.resume()
     }
-    
 }
