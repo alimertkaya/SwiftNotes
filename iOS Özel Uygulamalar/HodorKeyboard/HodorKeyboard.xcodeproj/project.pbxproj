@@ -16,6 +16,7 @@
 		B275B8A02A5C2DD700ED5840 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B275B89F2A5C2DD700ED5840 /* KeyboardViewController.swift */; };
 		B275B8A42A5C2DD700ED5840 /* Hodor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B275B89D2A5C2DD700ED5840 /* Hodor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B275B8AA2A5C2FCD00ED5840 /* hodor.png in Resources */ = {isa = PBXBuildFile; fileRef = B275B8A92A5C2FCD00ED5840 /* hodor.png */; };
+		B275B8AC2A5C325600ED5840 /* stewie.png in Resources */ = {isa = PBXBuildFile; fileRef = B275B8AB2A5C325600ED5840 /* stewie.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		B275B89F2A5C2DD700ED5840 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		B275B8A12A5C2DD700ED5840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B275B8A92A5C2FCD00ED5840 /* hodor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hodor.png; sourceTree = "<group>"; };
+		B275B8AB2A5C325600ED5840 /* stewie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stewie.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				B275B8A92A5C2FCD00ED5840 /* hodor.png */,
+				B275B8AB2A5C325600ED5840 /* stewie.png */,
 				B275B89F2A5C2DD700ED5840 /* KeyboardViewController.swift */,
 				B275B8A12A5C2DD700ED5840 /* Info.plist */,
 			);
@@ -208,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B275B8AC2A5C325600ED5840 /* stewie.png in Resources */,
 				B275B8AA2A5C2FCD00ED5840 /* hodor.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

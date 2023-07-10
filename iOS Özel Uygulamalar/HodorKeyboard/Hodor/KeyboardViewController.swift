@@ -21,12 +21,19 @@ class KeyboardViewController: UIInputViewController {
         super.viewDidLoad()
         
         // HODOR
-        
         let hodorButton = UIButton(type: UIButton.ButtonType.system)
-        hodorButton.frame = CGRect(x: 150, y: 50, width: 140, height: 120)
+        hodorButton.frame = CGRect(x: 75, y: 50, width: 140, height: 120)
         hodorButton.setBackgroundImage(UIImage(named: "hodor.png"), for: UIControl.State.normal)
         hodorButton.addTarget(self, action: #selector(hodorTapped), for: UIControl.Event.touchUpInside)
         view.addSubview(hodorButton)
+        
+        // Stewie
+        let stewieButton = UIButton(type: UIButton.ButtonType.system)
+        stewieButton.frame = CGRect(x: 150, y: 50, width: 140, height: 120)
+        stewieButton.setBackgroundImage(UIImage(named: "stewie.png"), for: UIControl.State.normal)
+        stewieButton.addTarget(self, action: #selector(stewieTapped), for: UIControl.Event.touchUpInside)
+        view.addSubview(stewieButton)
+        
         
         // Perform custom UI setup here
         self.nextKeyboardButton = UIButton(type: .system)
@@ -48,6 +55,13 @@ class KeyboardViewController: UIInputViewController {
         // ekrana yazı yazdırmak için proxy oluştur
         let textProxy = textDocumentProxy as UITextDocumentProxy
         textProxy.insertText("HODOR!")
+        
+    }
+    
+    @objc func stewieTapped() {
+        
+        let textProxy = textDocumentProxy as UITextDocumentProxy
+        textProxy.insertText("Stewie")
         
     }
     
