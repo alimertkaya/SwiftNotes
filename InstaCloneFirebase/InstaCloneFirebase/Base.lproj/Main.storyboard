@@ -16,68 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4To-ga-n9w">
-                                <rect key="frame" x="45" y="432" width="139" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="0M7-zB-NOV"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4To-ga-n9w">
+                                <rect key="frame" x="45" y="416" width="139" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign In"/>
                                 <connections>
                                     <action selector="signInClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tBO-Ki-QvF"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jDL-Jd-lok">
-                                <rect key="frame" x="45" y="185" width="302" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="UjS-FJ-CGg"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jDL-Jd-lok">
+                                <rect key="frame" x="45" y="276" width="302" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OFk-gv-yzG">
-                                <rect key="frame" x="45" y="242" width="302" height="127"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OFk-gv-yzG">
+                                <rect key="frame" x="45" y="333" width="302" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Instagram Clone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kr3-RY-V7B">
-                                <rect key="frame" x="79" y="113" width="235" height="62"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="bqr-9c-ruL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvz-hd-0b7">
-                                <rect key="frame" x="208" y="398" width="139" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvz-hd-0b7">
+                                <rect key="frame" x="208" y="416" width="139" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                 <connections>
                                     <action selector="signUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Rn-Q1-1tx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instagram Clone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kr3-RY-V7B">
+                                <rect key="frame" x="79" y="154" width="235" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="OFk-gv-yzG" firstAttribute="top" secondItem="jDL-Jd-lok" secondAttribute="bottom" constant="23" id="3bw-4w-JXg"/>
-                            <constraint firstItem="jDL-Jd-lok" firstAttribute="leading" secondItem="OFk-gv-yzG" secondAttribute="leading" id="6cz-vd-Vks"/>
-                            <constraint firstItem="Fvz-hd-0b7" firstAttribute="leading" secondItem="4To-ga-n9w" secondAttribute="trailing" constant="24" id="9Ck-TM-Vpz"/>
-                            <constraint firstItem="Kr3-RY-V7B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="CbJ-Ob-LRX"/>
-                            <constraint firstItem="jDL-Jd-lok" firstAttribute="top" secondItem="Kr3-RY-V7B" secondAttribute="bottom" constant="69" id="Dn5-hw-I8C"/>
-                            <constraint firstItem="jDL-Jd-lok" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="FD5-tS-kAc"/>
-                            <constraint firstItem="4To-ga-n9w" firstAttribute="baseline" secondItem="Fvz-hd-0b7" secondAttribute="baseline" id="NDn-Xk-aMn"/>
-                            <constraint firstItem="Fvz-hd-0b7" firstAttribute="baseline" secondItem="4To-ga-n9w" secondAttribute="firstBaseline" id="eiB-YH-arl"/>
-                            <constraint firstItem="jDL-Jd-lok" firstAttribute="trailing" secondItem="OFk-gv-yzG" secondAttribute="trailing" id="iL7-L5-Hw5"/>
-                            <constraint firstItem="OFk-gv-yzG" firstAttribute="leading" secondItem="4To-ga-n9w" secondAttribute="leading" id="idv-jO-4By"/>
-                            <constraint firstItem="Kr3-RY-V7B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="jnf-wL-btA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4To-ga-n9w" secondAttribute="bottom" constant="345" id="nZk-C6-Q6E"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jDL-Jd-lok" secondAttribute="trailing" constant="46" id="p6Q-H0-v9R"/>
-                            <constraint firstItem="4To-ga-n9w" firstAttribute="top" secondItem="OFk-gv-yzG" secondAttribute="bottom" constant="63" id="q9N-zz-JvQ"/>
-                            <constraint firstItem="Kr3-RY-V7B" firstAttribute="centerX" secondItem="jDL-Jd-lok" secondAttribute="centerX" id="qsI-bY-QXl"/>
-                            <constraint firstItem="OFk-gv-yzG" firstAttribute="trailing" secondItem="Fvz-hd-0b7" secondAttribute="trailing" id="tZo-Xt-hyX"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dOQ-72-xp8"/>
                     <connections>
@@ -155,7 +133,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="SMY-0V-xCR">
             <objects>
-                <tabBarController id="8ow-ly-eq1" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="8ow-ly-eq1" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="j4X-j1-GcY"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bzP-eA-LzR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
