@@ -13,6 +13,7 @@
 		B21B8B612A5DAF48000FD9B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21B8B5F2A5DAF48000FD9B6 /* Main.storyboard */; };
 		B21B8B632A5DAF49000FD9B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21B8B622A5DAF49000FD9B6 /* Assets.xcassets */; };
 		B21B8B662A5DAF49000FD9B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21B8B642A5DAF49000FD9B6 /* LaunchScreen.storyboard */; };
+		B2DFDF8E2A65A3940010F7AD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B2DFDF8D2A65A3940010F7AD /* FirebaseStorage */; };
 		B2E3EA932A603EF400EDFB23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E3EA922A603EF400EDFB23 /* GoogleService-Info.plist */; };
 		B2E3EA962A603FA500EDFB23 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B2E3EA952A603FA500EDFB23 /* FirebaseAuth */; };
 		B2E3EA982A605FF700EDFB23 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E3EA972A605FF700EDFB23 /* FeedViewController.swift */; };
@@ -41,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E3EA962A603FA500EDFB23 /* FirebaseAuth in Frameworks */,
+				B2DFDF8E2A65A3940010F7AD /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +54,7 @@
 			children = (
 				B21B8B582A5DAF48000FD9B6 /* InstaCloneFirebase */,
 				B21B8B572A5DAF48000FD9B6 /* Products */,
+				B2DFDF8C2A65A3940010F7AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +84,13 @@
 			path = InstaCloneFirebase;
 			sourceTree = "<group>";
 		};
+		B2DFDF8C2A65A3940010F7AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +109,7 @@
 			name = InstaCloneFirebase;
 			packageProductDependencies = (
 				B2E3EA952A603FA500EDFB23 /* FirebaseAuth */,
+				B2DFDF8D2A65A3940010F7AD /* FirebaseStorage */,
 			);
 			productName = InstaCloneFirebase;
 			productReference = B21B8B562A5DAF48000FD9B6 /* InstaCloneFirebase.app */;
@@ -393,6 +404,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B2DFDF8D2A65A3940010F7AD /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2E3EA942A603FA500EDFB23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
 		B2E3EA952A603FA500EDFB23 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B2E3EA942A603FA500EDFB23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
