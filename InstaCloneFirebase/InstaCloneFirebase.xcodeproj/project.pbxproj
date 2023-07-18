@@ -13,6 +13,7 @@
 		B21B8B612A5DAF48000FD9B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21B8B5F2A5DAF48000FD9B6 /* Main.storyboard */; };
 		B21B8B632A5DAF49000FD9B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21B8B622A5DAF49000FD9B6 /* Assets.xcassets */; };
 		B21B8B662A5DAF49000FD9B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21B8B642A5DAF49000FD9B6 /* LaunchScreen.storyboard */; };
+		B29BF41F2A66E2850053BB51 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B29BF41E2A66E2850053BB51 /* FirebaseFirestore */; };
 		B2DFDF8E2A65A3940010F7AD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B2DFDF8D2A65A3940010F7AD /* FirebaseStorage */; };
 		B2E3EA932A603EF400EDFB23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E3EA922A603EF400EDFB23 /* GoogleService-Info.plist */; };
 		B2E3EA962A603FA500EDFB23 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B2E3EA952A603FA500EDFB23 /* FirebaseAuth */; };
@@ -43,6 +44,7 @@
 			files = (
 				B2E3EA962A603FA500EDFB23 /* FirebaseAuth in Frameworks */,
 				B2DFDF8E2A65A3940010F7AD /* FirebaseStorage in Frameworks */,
+				B29BF41F2A66E2850053BB51 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +112,7 @@
 			packageProductDependencies = (
 				B2E3EA952A603FA500EDFB23 /* FirebaseAuth */,
 				B2DFDF8D2A65A3940010F7AD /* FirebaseStorage */,
+				B29BF41E2A66E2850053BB51 /* FirebaseFirestore */,
 			);
 			productName = InstaCloneFirebase;
 			productReference = B21B8B562A5DAF48000FD9B6 /* InstaCloneFirebase.app */;
@@ -404,6 +407,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B29BF41E2A66E2850053BB51 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2E3EA942A603FA500EDFB23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
 		B2DFDF8D2A65A3940010F7AD /* FirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B2E3EA942A603FA500EDFB23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
