@@ -47,6 +47,13 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
             }
         }
     }
+    
+    func makeAlert(titleInput: String, messageInput: String) {
+        let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
+    }
 
     @IBAction func uploadButtonClicked(_ sender: Any) {
         
@@ -60,10 +67,13 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         // imageView kayıt edebilmek için data ya çevirmek gerekiyor
         if let data = imageView.image?.jpegData(compressionQuality: 0.5) {
             
-            let imageReference = mediaFolder.child("image.jpg")
+            // imageler için random id
+            let uuid = UUID().uuidString
+            
+            let imageReference = mediaFolder.child("\(uuid).jpg")
             imageReference.putData(data, metadata: nil) { metadata, error in
                 if error != nil {
-                    print(error?.localizedDescription)
+                    self.makeAlert(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Error")
                 }
                 else {
                     
