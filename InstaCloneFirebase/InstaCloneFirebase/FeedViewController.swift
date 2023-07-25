@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class FeedViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
 
@@ -44,6 +45,13 @@ class FeedViewController: UIViewController , UITableViewDelegate, UITableViewDat
             }
             else {
                 if snapshot?.isEmpty != true && snapshot != nil {
+                    
+                    // Verilerin tekrarlamasını önler
+                    self.userImageArray.removeAll()
+                    self.userEmailArray.removeAll()
+                    self.userCommentArray.removeAll()
+                    self.likeArray.removeAll()
+                    
                     // snapshot!.documents -> Database de olan bilgileri bir dictionary içerisinde alır
                     for document in snapshot!.documents {
                         let documentID = document.documentID
@@ -84,7 +92,8 @@ class FeedViewController: UIViewController , UITableViewDelegate, UITableViewDat
         cell.userEmailLabel.text = userEmailArray[indexPath.row]
         cell.likeLabel.text = String(likeArray[indexPath.row])
         cell.commentLabel.text = userCommentArray[indexPath.row]
-        cell.userImageView.image = UIImage(named: "select.png")
+        // URL(string: ) -> yerine doğrudan yazılmaz, URL ile çevirilir, completed -> kullanmaya gerek yok çok fazla image olduğu için verimli olmaz
+        cell.userImageView.sd_setImage(with: URL(string: self.userImageArray[indexPath.row]))
         return cell
     }
 
