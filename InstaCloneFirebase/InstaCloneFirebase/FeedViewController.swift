@@ -16,6 +16,7 @@ class FeedViewController: UIViewController , UITableViewDelegate, UITableViewDat
     var userCommentArray = [String]()
     var likeArray = [Int]()
     var userImageArray = [String]()
+    var documentIdArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,8 @@ class FeedViewController: UIViewController , UITableViewDelegate, UITableViewDat
         fireStoreDatabase.settings = settings
          */
         
-        fireStoreDatabase.collection("Posts").addSnapshotListener { snapshot, error in
+        // order(by: , descending:) tarihe göre azalarak verileri çeker
+        fireStoreDatabase.collection("Posts").order(by: "date", descending: true).addSnapshotListener { snapshot, error in
             if error != nil {
                 print(error?.localizedDescription)
             }
@@ -51,10 +53,12 @@ class FeedViewController: UIViewController , UITableViewDelegate, UITableViewDat
                     self.userEmailArray.removeAll()
                     self.userCommentArray.removeAll()
                     self.likeArray.removeAll()
+                    self.documentIdArray.removeAll()
                     
                     // snapshot!.documents -> Database de olan bilgileri bir dictionary içerisinde alır
                     for document in snapshot!.documents {
                         let documentID = document.documentID
+                        self.documentIdArray.append(documentID)
                         
                         // snapshot.documents veriyi String to Any olarak verir o yüzden String olarak cast etmem lazım
                         if let postedBy = document.get("postedBy") as? String {
@@ -94,6 +98,7 @@ class FeedViewController: UIViewController , UITableViewDelegate, UITableViewDat
         cell.commentLabel.text = userCommentArray[indexPath.row]
         // URL(string: ) -> yerine doğrudan yazılmaz, URL ile çevirilir, completed -> kullanmaya gerek yok çok fazla image olduğu için verimli olmaz
         cell.userImageView.sd_setImage(with: URL(string: self.userImageArray[indexPath.row]))
+        cell.documentIdLabel.text = documentIdArray[indexPath.row]
         return cell
     }
 

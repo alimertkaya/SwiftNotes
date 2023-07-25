@@ -197,12 +197,20 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mPo-0V-S5b">
                                                     <rect key="frame" x="20" y="46" width="353" height="218"/>
                                                 </imageView>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwc-JA-0mw">
+                                                    <rect key="frame" x="338" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="TTV-na-gdh" firstAttribute="top" secondItem="mPo-0V-S5b" secondAttribute="bottom" constant="16" id="0Ow-hp-VgU"/>
                                                 <constraint firstItem="3VG-Bs-PS6" firstAttribute="trailing" secondItem="mPo-0V-S5b" secondAttribute="trailing" id="3t7-DR-7Bc"/>
                                                 <constraint firstItem="mPo-0V-S5b" firstAttribute="trailing" secondItem="TTV-na-gdh" secondAttribute="trailing" id="4hU-mc-7UJ"/>
+                                                <constraint firstItem="Cwc-JA-0mw" firstAttribute="baseline" secondItem="3VG-Bs-PS6" secondAttribute="baseline" id="HG2-MT-zHY"/>
                                                 <constraint firstItem="tex-q5-v4H" firstAttribute="bottom" secondItem="KHe-8k-evh" secondAttribute="bottomMargin" id="HaA-ZW-ytg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Cwc-JA-0mw" secondAttribute="trailing" constant="-7" id="Hax-nW-Qgr"/>
                                                 <constraint firstItem="TTV-na-gdh" firstAttribute="trailing" secondItem="wd6-c1-1U9" secondAttribute="trailing" id="Kri-5g-Vdb"/>
                                                 <constraint firstItem="mPo-0V-S5b" firstAttribute="leading" secondItem="TTV-na-gdh" secondAttribute="leading" id="Zcm-MP-Pvu"/>
                                                 <constraint firstItem="wd6-c1-1U9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tex-q5-v4H" secondAttribute="trailing" constant="8" symbolic="YES" id="aKg-us-bXf"/>
@@ -218,6 +226,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentLabel" destination="TTV-na-gdh" id="cAv-f0-lUc"/>
+                                            <outlet property="documentIdLabel" destination="Cwc-JA-0mw" id="gAC-5g-6FE"/>
                                             <outlet property="likeLabel" destination="wd6-c1-1U9" id="9Rc-EL-j9f"/>
                                             <outlet property="userEmailLabel" destination="3VG-Bs-PS6" id="ayy-qh-jR3"/>
                                             <outlet property="userImageView" destination="mPo-0V-S5b" id="Rnx-D9-jim"/>
