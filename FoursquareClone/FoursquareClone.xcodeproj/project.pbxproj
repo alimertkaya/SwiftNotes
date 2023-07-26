@@ -14,7 +14,23 @@
 		B2217B022A71392500EAD702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2217B002A71392500EAD702 /* Main.storyboard */; };
 		B2217B042A71392600EAD702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2217B032A71392600EAD702 /* Assets.xcassets */; };
 		B2217B072A71392600EAD702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2217B052A71392600EAD702 /* LaunchScreen.storyboard */; };
+		B2217B0F2A713FC800EAD702 /* ParseSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2217B0E2A713FC800EAD702 /* ParseSwift.framework */; };
+		B2217B102A713FC800EAD702 /* ParseSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2217B0E2A713FC800EAD702 /* ParseSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2217B112A713FC800EAD702 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B2217B102A713FC800EAD702 /* ParseSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5511C8260F36A347655D10BB /* Pods-FoursquareClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareClone.release.xcconfig"; path = "Target Support Files/Pods-FoursquareClone/Pods-FoursquareClone.release.xcconfig"; sourceTree = "<group>"; };
@@ -26,6 +42,7 @@
 		B2217B032A71392600EAD702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2217B062A71392600EAD702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2217B082A71392600EAD702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2217B0E2A713FC800EAD702 /* ParseSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ParseSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08B1E6049D37CD51FDB1DAF /* Pods-FoursquareClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareClone.debug.xcconfig"; path = "Target Support Files/Pods-FoursquareClone/Pods-FoursquareClone.debug.xcconfig"; sourceTree = "<group>"; };
 		F80583CA8C2EEF6258B04B43 /* Pods_FoursquareClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -35,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2217B0F2A713FC800EAD702 /* ParseSwift.framework in Frameworks */,
 				422831BCC03A4FD809DB4314 /* Pods_FoursquareClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +63,7 @@
 		36CBC74C38FA1D8C3ABEFCB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2217B0E2A713FC800EAD702 /* ParseSwift.framework */,
 				F80583CA8C2EEF6258B04B43 /* Pods_FoursquareClone.framework */,
 			);
 			name = Frameworks;
@@ -56,7 +75,6 @@
 				C08B1E6049D37CD51FDB1DAF /* Pods-FoursquareClone.debug.xcconfig */,
 				5511C8260F36A347655D10BB /* Pods-FoursquareClone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,6 +122,7 @@
 				B2217AF42A71392500EAD702 /* Frameworks */,
 				B2217AF52A71392500EAD702 /* Resources */,
 				4A90A1407E24C6810E328659 /* [CP] Embed Pods Frameworks */,
+				B2217B112A713FC800EAD702 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
