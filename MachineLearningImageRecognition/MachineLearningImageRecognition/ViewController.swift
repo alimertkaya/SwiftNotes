@@ -21,7 +21,7 @@ class ViewController: UIViewController, PHPickerViewControllerDelegate {
         super.viewDidLoad()
         
     }
-
+    
     @IBAction func changeClicked(_ sender: Any) {
         var configuration = PHPickerConfiguration()
         configuration.filter = .images
@@ -51,7 +51,26 @@ class ViewController: UIViewController, PHPickerViewControllerDelegate {
     }
     
     func recognizeImage(image: CIImage) {
+        // 1) Request
+        // 2) Handler
         
+        // MobilNewV2 modelini bir değişkene atıyoruz
+        if let model = try? VNCoreMLModel(for: MobileNetV2().model) {
+            let request = VNCoreMLRequest(model: model) { vnrequest, error in
+                
+                // VNClassificationObservation -> görsel analizinin sonucunda üretilen sınıflandırılma
+                if let results = vnrequest.results as? [VNClassificationObservation] {
+                    // ilk sonucu almak en yüksek olasılıklı sonucu verir
+                    if results.count > 0 {
+                        let topResult = results.first
+                        
+                        DispatchQueue.main.async {
+                            let confidenceLevel = (topResult?.confidence ?? 0) * 100
+                            self.resultLabel.text = "\(confidenceLevel)% it's \(topResult?.identifier)"
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-
