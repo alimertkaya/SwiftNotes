@@ -39,20 +39,23 @@ class ViewController: UIViewController, PHPickerViewControllerDelegate {
                 DispatchQueue.main.async {
                     guard let self = self, let image = image as? UIImage, self.imageView.image == previousImage else { return }
                     self.imageView.image = image
+                    
+                    // Model bir CIImage görsel yapısı bekler
+                    if let ciImage = CIImage(image: image) {
+                        self.chosenImage = ciImage
+                    }
                 }
             }
         }
         
-        // Model bir CIImage görsel yapısı bekler
-        if let ciImage = CIImage(image: imageView.image!) {
-            chosenImage = ciImage
-        }
         recognizeImage(image: chosenImage)
     }
     
     func recognizeImage(image: CIImage) {
         // 1) Request
         // 2) Handler
+        
+        resultLabel.text = "Finding..."
         
         // MobilNewV2 modelini bir değişkene atıyoruz
         if let model = try? VNCoreMLModel(for: MobileNetV2().model) {
@@ -66,9 +69,19 @@ class ViewController: UIViewController, PHPickerViewControllerDelegate {
                         
                         DispatchQueue.main.async {
                             let confidenceLevel = (topResult?.confidence ?? 0) * 100
-                            self.resultLabel.text = "\(confidenceLevel)% it's \(topResult?.identifier)"
+                            let rounded = (Int(confidenceLevel) * 100) / 100
+                            self.resultLabel.text = "\(rounded)% it's \(topResult?.identifier)"
                         }
                     }
+                }
+            }
+            let handler = VNImageRequestHandler(ciImage: image)
+            // DispatchQueue.global() -> çok önerilmez işleme öncelik vererek çok hızlı yapmasını söyler
+            DispatchQueue.global(qos: .userInteractive).async {
+                do {
+                    try handler.perform([request])
+                    } catch {
+                        print("error")
                 }
             }
         }
