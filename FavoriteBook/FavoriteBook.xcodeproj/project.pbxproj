@@ -12,6 +12,7 @@
 		B2F1F5CC2A8239D4002B0BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F1F5CB2A8239D4002B0BAC /* Assets.xcassets */; };
 		B2F1F5CF2A8239D4002B0BAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F1F5CE2A8239D4002B0BAC /* Preview Assets.xcassets */; };
 		B2F1F5D62A823A17002B0BAC /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F1F5D52A823A16002B0BAC /* FavoriteModel.swift */; };
+		B2F1F5D82A825E5B002B0BAC /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F1F5D72A825E5B002B0BAC /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		B2F1F5CB2A8239D4002B0BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2F1F5CE2A8239D4002B0BAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B2F1F5D52A823A16002B0BAC /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		B2F1F5D72A825E5B002B0BAC /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				B2F1F5C72A8239D3002B0BAC /* FavoriteBookApp.swift */,
 				B2F1F5C92A8239D3002B0BAC /* ContentView.swift */,
 				B2F1F5D52A823A16002B0BAC /* FavoriteModel.swift */,
+				B2F1F5D72A825E5B002B0BAC /* DetailsView.swift */,
 				B2F1F5CB2A8239D4002B0BAC /* Assets.xcassets */,
 				B2F1F5CD2A8239D4002B0BAC /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F1F5D62A823A17002B0BAC /* FavoriteModel.swift in Sources */,
+				B2F1F5D82A825E5B002B0BAC /* DetailsView.swift in Sources */,
 				B2F1F5CA2A8239D3002B0BAC /* ContentView.swift in Sources */,
 				B2F1F5C82A8239D3002B0BAC /* FavoriteBookApp.swift in Sources */,
 			);
