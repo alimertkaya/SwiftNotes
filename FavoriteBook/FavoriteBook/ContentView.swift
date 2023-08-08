@@ -12,9 +12,10 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(myFavorites) { favorite in
-                    Section(header: Text(favorite.title)) {
+                    Section(header: Text(favorite.title)
+                        ) {
                         ForEach(favorite.elements) { element in
-                            NavigationLink(destination: DetailsView()) {
+                            NavigationLink(destination: DetailsView(chosenFavoriteElement: element)) {
                                 Text(element.name)
                             }
                         }
