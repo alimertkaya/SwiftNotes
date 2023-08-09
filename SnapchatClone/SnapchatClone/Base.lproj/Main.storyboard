@@ -196,6 +196,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="GAA-uC-3hP"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignInVC" modalPresentationStyle="fullScreen" id="uT3-v5-bKQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ngf-3B-rup" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,7 +239,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="z90-jM-EOg">
             <objects>
-                <tabBarController id="23C-m3-VDN" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="23C-m3-VDN" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="az1-Vd-W3Y">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
