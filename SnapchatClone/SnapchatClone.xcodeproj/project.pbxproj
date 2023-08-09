@@ -21,6 +21,7 @@
 		B28A818C2A837CCE00AF6885 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A818B2A837CCE00AF6885 /* UploadVC.swift */; };
 		B28A818E2A837CDB00AF6885 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A818D2A837CDB00AF6885 /* SettingsVC.swift */; };
 		B28A81922A837F1000AF6885 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A81912A837F1000AF6885 /* SnapVC.swift */; };
+		B28A81952A8392EB00AF6885 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A81942A8392EB00AF6885 /* UserSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		B28A818B2A837CCE00AF6885 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		B28A818D2A837CDB00AF6885 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		B28A81912A837F1000AF6885 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
+		B28A81942A8392EB00AF6885 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		B28A816B2A83713A00AF6885 /* SnapchatClone */ = {
 			isa = PBXGroup;
 			children = (
+				B28A81932A8392CF00AF6885 /* Model */,
 				B28A81902A837D0E00AF6885 /* Delegates */,
 				B28A818F2A837CE600AF6885 /* ViewControllers */,
 				B28A81722A83713A00AF6885 /* Main.storyboard */,
@@ -102,6 +105,14 @@
 				B28A816E2A83713A00AF6885 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		B28A81932A8392CF00AF6885 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B28A81942A8392EB00AF6885 /* UserSingleton.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28A81952A8392EB00AF6885 /* UserSingleton.swift in Sources */,
 				B28A818A2A837CC200AF6885 /* FeedVC.swift in Sources */,
 				B28A81712A83713A00AF6885 /* SignVC.swift in Sources */,
 				B28A816D2A83713A00AF6885 /* AppDelegate.swift in Sources */,
