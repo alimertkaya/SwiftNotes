@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B28A816D2A83713A00AF6885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A816C2A83713A00AF6885 /* AppDelegate.swift */; };
 		B28A816F2A83713A00AF6885 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A816E2A83713A00AF6885 /* SceneDelegate.swift */; };
-		B28A81712A83713A00AF6885 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A81702A83713A00AF6885 /* ViewController.swift */; };
+		B28A81712A83713A00AF6885 /* SignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A81702A83713A00AF6885 /* SignVC.swift */; };
 		B28A81742A83713A00AF6885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28A81722A83713A00AF6885 /* Main.storyboard */; };
 		B28A81762A83713B00AF6885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28A81752A83713B00AF6885 /* Assets.xcassets */; };
 		B28A81792A83713B00AF6885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28A81772A83713B00AF6885 /* LaunchScreen.storyboard */; };
@@ -17,18 +17,26 @@
 		B28A81842A8374E300AF6885 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B28A81832A8374E300AF6885 /* FirebaseAuth */; };
 		B28A81862A8374E300AF6885 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B28A81852A8374E300AF6885 /* FirebaseFirestore */; };
 		B28A81882A8374E300AF6885 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B28A81872A8374E300AF6885 /* FirebaseStorage */; };
+		B28A818A2A837CC200AF6885 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A81892A837CC200AF6885 /* FeedVC.swift */; };
+		B28A818C2A837CCE00AF6885 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A818B2A837CCE00AF6885 /* UploadVC.swift */; };
+		B28A818E2A837CDB00AF6885 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A818D2A837CDB00AF6885 /* SettingsVC.swift */; };
+		B28A81922A837F1000AF6885 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A81912A837F1000AF6885 /* SnapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B28A81692A83713A00AF6885 /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28A816C2A83713A00AF6885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B28A816E2A83713A00AF6885 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B28A81702A83713A00AF6885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B28A81702A83713A00AF6885 /* SignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVC.swift; sourceTree = "<group>"; };
 		B28A81732A83713A00AF6885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B28A81752A83713B00AF6885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B28A81782A83713B00AF6885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B28A817A2A83713B00AF6885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28A81802A83726700AF6885 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B28A81892A837CC200AF6885 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		B28A818B2A837CCE00AF6885 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
+		B28A818D2A837CDB00AF6885 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		B28A81912A837F1000AF6885 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +72,8 @@
 		B28A816B2A83713A00AF6885 /* SnapchatClone */ = {
 			isa = PBXGroup;
 			children = (
-				B28A816C2A83713A00AF6885 /* AppDelegate.swift */,
-				B28A816E2A83713A00AF6885 /* SceneDelegate.swift */,
-				B28A81702A83713A00AF6885 /* ViewController.swift */,
+				B28A81902A837D0E00AF6885 /* Delegates */,
+				B28A818F2A837CE600AF6885 /* ViewControllers */,
 				B28A81722A83713A00AF6885 /* Main.storyboard */,
 				B28A81752A83713B00AF6885 /* Assets.xcassets */,
 				B28A81772A83713B00AF6885 /* LaunchScreen.storyboard */,
@@ -74,6 +81,27 @@
 				B28A817A2A83713B00AF6885 /* Info.plist */,
 			);
 			path = SnapchatClone;
+			sourceTree = "<group>";
+		};
+		B28A818F2A837CE600AF6885 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B28A81702A83713A00AF6885 /* SignVC.swift */,
+				B28A81892A837CC200AF6885 /* FeedVC.swift */,
+				B28A818B2A837CCE00AF6885 /* UploadVC.swift */,
+				B28A818D2A837CDB00AF6885 /* SettingsVC.swift */,
+				B28A81912A837F1000AF6885 /* SnapVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B28A81902A837D0E00AF6885 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B28A816C2A83713A00AF6885 /* AppDelegate.swift */,
+				B28A816E2A83713A00AF6885 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B28A81712A83713A00AF6885 /* ViewController.swift in Sources */,
+				B28A818A2A837CC200AF6885 /* FeedVC.swift in Sources */,
+				B28A81712A83713A00AF6885 /* SignVC.swift in Sources */,
 				B28A816D2A83713A00AF6885 /* AppDelegate.swift in Sources */,
+				B28A818C2A837CCE00AF6885 /* UploadVC.swift in Sources */,
+				B28A81922A837F1000AF6885 /* SnapVC.swift in Sources */,
 				B28A816F2A83713A00AF6885 /* SceneDelegate.swift in Sources */,
+				B28A818E2A837CDB00AF6885 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
