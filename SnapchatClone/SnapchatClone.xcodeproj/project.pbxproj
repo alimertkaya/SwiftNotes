@@ -22,6 +22,8 @@
 		B28A818E2A837CDB00AF6885 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A818D2A837CDB00AF6885 /* SettingsVC.swift */; };
 		B28A81922A837F1000AF6885 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A81912A837F1000AF6885 /* SnapVC.swift */; };
 		B28A81952A8392EB00AF6885 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A81942A8392EB00AF6885 /* UserSingleton.swift */; };
+		B2CD2B6A2A84C5840074673D /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD2B692A84C5840074673D /* FeedCell.swift */; };
+		B2CD2B6C2A84C8960074673D /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD2B6B2A84C8960074673D /* Snap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		B28A818D2A837CDB00AF6885 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		B28A81912A837F1000AF6885 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
 		B28A81942A8392EB00AF6885 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
+		B2CD2B692A84C5840074673D /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		B2CD2B6B2A84C8960074673D /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				B28A818B2A837CCE00AF6885 /* UploadVC.swift */,
 				B28A818D2A837CDB00AF6885 /* SettingsVC.swift */,
 				B28A81912A837F1000AF6885 /* SnapVC.swift */,
+				B2CD2B692A84C5840074673D /* FeedCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				B28A81942A8392EB00AF6885 /* UserSingleton.swift */,
+				B2CD2B6B2A84C8960074673D /* Snap.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B28A81952A8392EB00AF6885 /* UserSingleton.swift in Sources */,
+				B2CD2B6C2A84C8960074673D /* Snap.swift in Sources */,
 				B28A818A2A837CC200AF6885 /* FeedVC.swift in Sources */,
 				B28A81712A83713A00AF6885 /* SignVC.swift in Sources */,
 				B28A816D2A83713A00AF6885 /* AppDelegate.swift in Sources */,
@@ -203,6 +210,7 @@
 				B28A81922A837F1000AF6885 /* SnapVC.swift in Sources */,
 				B28A816F2A83713A00AF6885 /* SceneDelegate.swift in Sources */,
 				B28A818E2A837CDB00AF6885 /* SettingsVC.swift in Sources */,
+				B2CD2B6A2A84C5840074673D /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
