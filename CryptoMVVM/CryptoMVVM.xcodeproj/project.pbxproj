@@ -14,6 +14,8 @@
 		B2CB82012A8624F900709E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CB82002A8624F900709E0F /* Assets.xcassets */; };
 		B2CB82042A8624F900709E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CB82022A8624F900709E0F /* LaunchScreen.storyboard */; };
 		B2CB820C2A8625D400709E0F /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB820B2A8625D400709E0F /* CryptoTableViewCell.swift */; };
+		B2CB82142A862C5700709E0F /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB82132A862C5700709E0F /* Webservice.swift */; };
+		B2CB82162A86329D00709E0F /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB82152A86329D00709E0F /* Crypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B2CB82032A8624F900709E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2CB82052A8624F900709E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2CB820B2A8625D400709E0F /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		B2CB82132A862C5700709E0F /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		B2CB82152A86329D00709E0F /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,50 @@
 		B2CB81F62A8624F800709E0F /* CryptoMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				B2CB81F72A8624F800709E0F /* AppDelegate.swift */,
-				B2CB81F92A8624F800709E0F /* SceneDelegate.swift */,
-				B2CB81FB2A8624F800709E0F /* ViewController.swift */,
-				B2CB820B2A8625D400709E0F /* CryptoTableViewCell.swift */,
+				B2CB82122A862C4400709E0F /* Service */,
+				B2CB820F2A8626EA00709E0F /* ViewModel */,
+				B2CB820E2A8626E300709E0F /* Model */,
+				B2CB820D2A8626DD00709E0F /* View */,
 				B2CB81FD2A8624F800709E0F /* Main.storyboard */,
 				B2CB82002A8624F900709E0F /* Assets.xcassets */,
 				B2CB82022A8624F900709E0F /* LaunchScreen.storyboard */,
 				B2CB82052A8624F900709E0F /* Info.plist */,
 			);
 			path = CryptoMVVM;
+			sourceTree = "<group>";
+		};
+		B2CB820D2A8626DD00709E0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2CB81F72A8624F800709E0F /* AppDelegate.swift */,
+				B2CB81F92A8624F800709E0F /* SceneDelegate.swift */,
+				B2CB81FB2A8624F800709E0F /* ViewController.swift */,
+				B2CB820B2A8625D400709E0F /* CryptoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2CB820E2A8626E300709E0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2CB82152A86329D00709E0F /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2CB820F2A8626EA00709E0F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2CB82122A862C4400709E0F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B2CB82132A862C5700709E0F /* Webservice.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +181,9 @@
 			files = (
 				B2CB820C2A8625D400709E0F /* CryptoTableViewCell.swift in Sources */,
 				B2CB81FC2A8624F800709E0F /* ViewController.swift in Sources */,
+				B2CB82142A862C5700709E0F /* Webservice.swift in Sources */,
 				B2CB81F82A8624F800709E0F /* AppDelegate.swift in Sources */,
+				B2CB82162A86329D00709E0F /* Crypto.swift in Sources */,
 				B2CB81FA2A8624F800709E0F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
