@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2A608082A876DBF00A2E62E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B2A608072A876DBF00A2E62E /* RxCocoa */; };
+		B2A6080A2A876DBF00A2E62E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B2A608092A876DBF00A2E62E /* RxSwift */; };
 		B2CB81F82A8624F800709E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB81F72A8624F800709E0F /* AppDelegate.swift */; };
 		B2CB81FA2A8624F800709E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB81F92A8624F800709E0F /* SceneDelegate.swift */; };
 		B2CB81FC2A8624F800709E0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB81FB2A8624F800709E0F /* ViewController.swift */; };
 		B2CB81FF2A8624F800709E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CB81FD2A8624F800709E0F /* Main.storyboard */; };
 		B2CB82012A8624F900709E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CB82002A8624F900709E0F /* Assets.xcassets */; };
 		B2CB82042A8624F900709E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CB82022A8624F900709E0F /* LaunchScreen.storyboard */; };
-		B2CB820C2A8625D400709E0F /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB820B2A8625D400709E0F /* CryptoTableViewCell.swift */; };
 		B2CB82142A862C5700709E0F /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB82132A862C5700709E0F /* Webservice.swift */; };
 		B2CB82162A86329D00709E0F /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB82152A86329D00709E0F /* Crypto.swift */; };
+		B2CB82182A863A8300709E0F /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB82172A863A8300709E0F /* CryptoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +29,9 @@
 		B2CB82002A8624F900709E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2CB82032A8624F900709E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2CB82052A8624F900709E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2CB820B2A8625D400709E0F /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 		B2CB82132A862C5700709E0F /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		B2CB82152A86329D00709E0F /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		B2CB82172A863A8300709E0F /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A6080A2A876DBF00A2E62E /* RxSwift in Frameworks */,
+				B2A608082A876DBF00A2E62E /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +84,6 @@
 				B2CB81F72A8624F800709E0F /* AppDelegate.swift */,
 				B2CB81F92A8624F800709E0F /* SceneDelegate.swift */,
 				B2CB81FB2A8624F800709E0F /* ViewController.swift */,
-				B2CB820B2A8625D400709E0F /* CryptoTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 		B2CB820F2A8626EA00709E0F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B2CB82172A863A8300709E0F /* CryptoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -124,6 +128,10 @@
 			dependencies = (
 			);
 			name = CryptoMVVM;
+			packageProductDependencies = (
+				B2A608072A876DBF00A2E62E /* RxCocoa */,
+				B2A608092A876DBF00A2E62E /* RxSwift */,
+			);
 			productName = CryptoMVVM;
 			productReference = B2CB81F42A8624F800709E0F /* CryptoMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +160,9 @@
 				Base,
 			);
 			mainGroup = B2CB81EB2A8624F800709E0F;
+			packageReferences = (
+				B2A608062A876DBF00A2E62E /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = B2CB81F52A8624F800709E0F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -179,9 +190,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2CB820C2A8625D400709E0F /* CryptoTableViewCell.swift in Sources */,
 				B2CB81FC2A8624F800709E0F /* ViewController.swift in Sources */,
 				B2CB82142A862C5700709E0F /* Webservice.swift in Sources */,
+				B2CB82182A863A8300709E0F /* CryptoViewModel.swift in Sources */,
 				B2CB81F82A8624F800709E0F /* AppDelegate.swift in Sources */,
 				B2CB82162A86329D00709E0F /* Crypto.swift in Sources */,
 				B2CB81FA2A8624F800709E0F /* SceneDelegate.swift in Sources */,
@@ -400,6 +411,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2A608062A876DBF00A2E62E /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2A608072A876DBF00A2E62E /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2A608062A876DBF00A2E62E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		B2A608092A876DBF00A2E62E /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2A608062A876DBF00A2E62E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2CB81EC2A8624F800709E0F /* Project object */;
 }

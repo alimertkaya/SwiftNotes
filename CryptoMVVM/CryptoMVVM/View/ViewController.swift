@@ -17,10 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
-        let url = URL(string: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json")!
-        Webservice().downloadCurrencies(url: url) { <#Result<[Crypto], CryptoError>#> in
-            <#code#>
-        }
+        
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,7 +25,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CryptoCell", for: indexPath) as! CryptoTableViewCell
+        let cell = UITableViewCell()
+        var content = cell.defaultContentConfiguration()
+        content.text = "Crypto Currency"
+        content.secondaryText = "Crypto Price"
+        cell.contentConfiguration = content
         return cell
     }
 }
