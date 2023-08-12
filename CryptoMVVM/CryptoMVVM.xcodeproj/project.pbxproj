@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B2A608082A876DBF00A2E62E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B2A608072A876DBF00A2E62E /* RxCocoa */; };
 		B2A6080A2A876DBF00A2E62E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B2A608092A876DBF00A2E62E /* RxSwift */; };
+		B2A6080C2A87768F00A2E62E /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6080B2A87768F00A2E62E /* CryptoTableViewCell.swift */; };
 		B2CB81F82A8624F800709E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB81F72A8624F800709E0F /* AppDelegate.swift */; };
 		B2CB81FA2A8624F800709E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB81F92A8624F800709E0F /* SceneDelegate.swift */; };
 		B2CB81FC2A8624F800709E0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB81FB2A8624F800709E0F /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2A6080B2A87768F00A2E62E /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 		B2CB81F42A8624F800709E0F /* CryptoMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CB81F72A8624F800709E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2CB81F92A8624F800709E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				B2CB81F72A8624F800709E0F /* AppDelegate.swift */,
 				B2CB81F92A8624F800709E0F /* SceneDelegate.swift */,
 				B2CB81FB2A8624F800709E0F /* ViewController.swift */,
+				B2A6080B2A87768F00A2E62E /* CryptoTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				B2CB81F82A8624F800709E0F /* AppDelegate.swift in Sources */,
 				B2CB82162A86329D00709E0F /* Crypto.swift in Sources */,
 				B2CB81FA2A8624F800709E0F /* SceneDelegate.swift in Sources */,
+				B2A6080C2A87768F00A2E62E /* CryptoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
