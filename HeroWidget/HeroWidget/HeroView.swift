@@ -25,6 +25,7 @@ struct HeroView: View {
                     .fontWeight(.bold)
             }.padding()
             Spacer()
+            
         }.frame(width: UIScreen.main.bounds.width, alignment: .center)
     }
 }
