@@ -30,6 +30,7 @@ class CryptoInteractor : AnyInteractor {
                 self?.presenter?.interactorDidDownloadCrypto(result: .failure(NetworkError.NetworkFailed))
                 return
             }
+            
             do {
                 let cryptos = try JSONDecoder().decode([Crypto].self, from: data)
                 self?.presenter?.interactorDidDownloadCrypto(result: .success(cryptos))
