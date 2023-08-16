@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MainActor -> Bu sınıfın içerisindeki property ler main thread e işlem görecek diye garanti verir
+
 class CryptoListViewModel : ObservableObject {
     
     // Published -> yayın yaparak değişikleri gözlemletir
@@ -18,10 +20,12 @@ class CryptoListViewModel : ObservableObject {
             
         do {
             let cryptos = try await webservice.downloadCurrenciesContinuation(url: url)
+            /*
             DispatchQueue.main.async {
                 // map -> bir modeli diğer modele çevirir
                 self.cryptoList = cryptos.map(CryptoViewModel.init)
             }
+             */
         } catch {
             print(error)
         }
