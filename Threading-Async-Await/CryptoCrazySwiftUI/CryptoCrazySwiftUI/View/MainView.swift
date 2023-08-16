@@ -32,14 +32,20 @@ struct MainView: View {
                 }
             }.navigationTitle("Crypto Crazy")
             // onAppear -> View oluşturulduğunda ne olucak
-        }.onAppear() {
-            cryptoListViewModel.downloadCryptos(url: URL(string: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json")!)
+                .task {
+                    await cryptoListViewModel.downloadCryptosAsync(url: URL(string: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json")!)
+                }
+            /*
+             }.onAppear() {
+             cryptoListViewModel.downloadCryptos(url: URL(string: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json")!)
+             }
+             */
         }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            MainView()
+        }
     }
 }
